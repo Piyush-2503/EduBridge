@@ -1,0 +1,6 @@
+{
+  "name": "EduBridge Academia Portal",
+  "description": "Institutional command center for skill mapping, internship tracking, placement intelligence, and industry collaboration (SIH PS-26044).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

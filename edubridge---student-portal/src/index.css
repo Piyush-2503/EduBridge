@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --edubridge-navy: #111844;
+  --edubridge-indigo: #4B5694;
+  --edubridge-soft-blue: #7288AE;
+  --edubridge-cream: #EAE0CF;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 85% 5%,
+      rgba(114, 136, 174, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(234, 224, 207, 0.18),
+      transparent 30%
+    ),
+    #F8F9FD;
+  min-height: 100vh;
+  color: #111844;
+}
+
+@layer utilities {
+  .border-gradient-edubridge {
+    border: 1px solid transparent;
+    background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)) padding-box,
+                linear-gradient(135deg, rgba(75, 86, 148, 0.35), rgba(114, 136, 174, 0.25), rgba(234, 224, 207, 0.6)) border-box;
+    box-shadow: 0 8px 24px rgba(17, 24, 68, 0.045);
+  }
+  
+  .border-gradient-edubridge-hover:hover {
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+                linear-gradient(135deg, #4B5694, #7288AE, #EAE0CF) border-box;
+    box-shadow: 0 12px 30px -4px rgba(75, 86, 148, 0.14), 0 8px 12px -6px rgba(17, 24, 68, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .edubridge-card {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(75, 86, 148, 0.14);
+    box-shadow: 0 8px 24px rgba(17, 24, 68, 0.045);
+    transition: all 0.22s ease-out;
+  }
+
+  .edubridge-card-hover:hover {
+    transform: translateY(-2px);
+    border-color: rgba(75, 86, 148, 0.32);
+    box-shadow: 0 12px 28px rgba(17, 24, 68, 0.08);
+  }
+
+  .edubridge-glass-topbar {
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(75, 86, 148, 0.18);
+    box-shadow: 0 8px 30px rgba(17, 24, 68, 0.06);
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F4FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7288AE;
+}
+
+/* Accessibility: respect user prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

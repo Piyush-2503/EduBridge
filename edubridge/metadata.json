@@ -1,0 +1,6 @@
+{
+  "name": "EduBridge",
+  "description": "Portal for Academia–Industry Collaboration for Skill Mapping, Internships and Placement — SIH 2026 Problem Statement 26044",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "EduBridge Industry Portal",
+  "description": "Academia-Industry collaboration platform for skill mapping, verified talent discovery, internships, and placement (SIH 2026 PS-26044).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

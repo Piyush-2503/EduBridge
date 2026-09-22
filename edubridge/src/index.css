@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-navy: #111844;
+  --color-primary-blue: #4B5694;
+  --color-secondary-blue: #7288AE;
+  --color-cream: #EAE0CF;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #111844;
+  background-color: #F7F8FC;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(114, 136, 174, 0.14), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(234, 224, 207, 0.45), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(75, 86, 148, 0.08), transparent 35%);
+  min-height: 100vh;
+}
+
+/* Custom Gradient Border helper */
+.gradient-border-card {
+  background: 
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #4B5694, #7288AE, #EAE0CF) border-box;
+  border: 1px solid transparent;
+}
+
+.gradient-border-card-subtle {
+  background: 
+    linear-gradient(to bottom, #ffffff, #FAF8F5) padding-box,
+    linear-gradient(135deg, rgba(75, 86, 148, 0.4), rgba(114, 136, 174, 0.3), rgba(234, 224, 207, 0.5)) border-box;
+  border: 1px solid transparent;
+}
+
+/* Subtle dot grid pattern */
+.bg-edubridge-grid {
+  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(114, 136, 174, 0.15) 1px, transparent 1px);
+}
+
+
